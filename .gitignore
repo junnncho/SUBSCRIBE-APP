@@ -1,0 +1,10 @@
+*.log
+
+node_modules
+
+.env
+
+**/__pycache__/
+
+.DS_Store
+.http

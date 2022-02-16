@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["ES2017"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "allowSyntheticDefaultImports": true, //default export가 없는 모듈에서 default imports를 허용
+    "experimentalDecorators": true, // ES 데코레이터에 대한 실험적인 지원을 사용
+    "emitDecoratorMetadata": true, //소스에 데코레이터 선언에 대한 설계-타입 메타 데이터를 내보냄.
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "tests"]
+}
